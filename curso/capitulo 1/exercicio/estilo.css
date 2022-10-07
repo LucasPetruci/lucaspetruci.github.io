@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.tituloPrincipal{
+    font-family: 'Silkscreen', cursive;
+}
+main{
+    background-image: url(EORbj.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+article p{
+    text-align: center;
+}
+
+article{
+    background-color: aquamarine;
+}
+
+.h2Principal{
+    background-color: bisque;
+}
+
+
