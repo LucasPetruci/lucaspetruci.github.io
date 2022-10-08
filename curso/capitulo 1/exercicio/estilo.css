@@ -24,4 +24,8 @@ article{
     background-color: bisque;
 }
 
+li::before {
+    content: "\2192";
+}
+
 
