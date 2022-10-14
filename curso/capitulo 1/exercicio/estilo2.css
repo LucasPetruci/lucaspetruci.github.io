@@ -1,0 +1,47 @@
+nav{
+    display: block;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    background-color: rgb(161, 157, 153);   
+}
+
+li:hover{
+    background-image: url(Sprite_g.jpg);
+}
+
+#vertical {
+    width: 200px;
+}
+
+#vertical ul{
+    flex-direction: column;
+}
+
+nav a{
+    color: black;
+    display: block;
+    padding: 15px 20px;
+}
+
+ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
