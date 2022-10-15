@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+}
+
+h1{
+    grid-area: logo;
+}
+
+nav{
+    grid-area: nav;
+}
