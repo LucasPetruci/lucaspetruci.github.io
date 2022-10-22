@@ -3,6 +3,7 @@ function primeiraFuncao(){
     var palindromo = palavra
     palindromo = palavra.split("").reverse().join("")
     
+    
     if (palavra == palindromo) {
         return alert("Sim")
     } else{
