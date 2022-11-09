@@ -2,21 +2,22 @@
 <html lang = "pt-br">
   <head> 
     <title> Fármácia SalePharma</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" media="screen" href="cadastro_login.css">
+    <script type="text/javascript" src="cadastro_login.js"></script>
+    <meta charset="utf-8">
   </head>
   <body>
     <header class="o-header">
-   <div> <a href = "compra_produto.html"> <img src ="https://cdn-icons-png.flaticon.com/512/34/34627.png" class="carrinho"> </a> </div>
+   <div> <a href = ""> <img src ="https://cdn-icons-png.flaticon.com/512/34/34627.png" class="carrinho"> </a> </div>
     <div> <a href = ""> <img src="https://cdn-icons-png.flaticon.com/512/4225/4225955.png" class="ajuda"> </a> </div>
-    <div> <a href = "cadastro_login.html"> <img src ="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" class=cliente> </a> </div>
+    <div> <a href = ""> <img src ="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" class=cliente> </a> </div>
      <div> <img src="https://cdn-icons-png.flaticon.com/512/13/13311.png" class= lupa> </div>
-      <a href= "index_wireframe.html" style="text-decoration:none"> <img src="https://cdn-icons-png.flaticon.com/512/4656/4656727.png" class="logo"></a> <a href="index_wireframe.css" style="text-decoration:none"><h2 class="nome_logo">SalePharma</h2> </a>
+      <a href= "" style="text-decoration:none"> <img src="https://cdn-icons-png.flaticon.com/512/4656/4656727.png" class="logo"></a> <a href="" style="text-decoration:none"><h2 class="nome_logo">SalePharma</h2> </a>
       <div id="formulario">
       <form> 
         <input type = "text" placeholder="Pesquise o produto" id="pesquisa">
       </form>
-
+        
         </div>
       </header>
 <main class="o-main">
@@ -27,13 +28,13 @@
   
 <h2>Cadastre-se </h2>
   <form class="cadastro">
-   <div> <input type="text" placeholder="Nome Completo"><br> </div>
-   <div> <input type="text" placeholder="email"> <br> </div>
-    <div> <input type="text" placeholder="CPF"> <br> </div>
-    <div><input type="password" placeholder="Senha"> <br> </div>
-    <div><input type="password" placeholder="Confirme a Senha"> <br> </div>
+   <div> <input type="text" placeholder="Nome Completo" id="nome_completo" ><br> </div>
+   <div> <input type="text" placeholder="email" id="email"> <br> </div>
+    <div> <input type="text" placeholder="CPF" id="cpf" required> <br> </div>
+    <div><input type="password" placeholder="Senha" id="senha" required> <br> </div>
+    <div><input type="password" placeholder="Confirme a Senha" id="confirmar_senha" required > <br> </div>
      <div id="botao_cadastro"> 
-    <div>Cadastre-se </div>
+     <input type="submit" name="cadastro" value="Cadastre-se" id="cadastro" onclick="return validar()"> 
        </div>
     </form>
   <h2 class="nome_login"> Login <h2>

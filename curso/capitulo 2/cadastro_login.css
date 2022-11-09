@@ -1,161 +1,165 @@
 body {
-    display: grid;
-    font-family: manrope, sans-serif;
-    grid-gap: 1rem;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "main main main"
-      "footer footer footer";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 100vh auto;
-  }
-  #pesquisa{
-    height: 30px;
-    font-size: 25px;
-    display: block;
-  }
-  .lupa{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding-left: 770px;
-    padding-top: 60px;
-    display: block;
-  }
-  #formulario{
-    position: relative;
-  }
-  #formulario > form{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translatey(-230%) translateX(-60%)
-  }
-  .o-header {
-    grid-area: header;
-    padding: 1.5rem;
-    background: red;
-    color:white;
-  }
-  .logo{
-    width: 78px;
-    height: 78px;
-    padding-left: 40px;
-    position: absolute;
-    display: block;
-  }
-  .nome_logo{
-    padding-top: 75px;
-    color: white;
-    padding-left: 15px;
-    display: block;
-  }
-  .cliente{
-    width: 60px;
-    position: absolute;
-    padding-left: 1050px;
-    display: block;
-  }
-  .o-main {
-    grid-area: main;
-    background: grey;
-    color: white;
-  }
-  main > p{
-    color:black;
-  }
-  .carrinho{
-    width:70px;
-    position:absolute;
-    display: block;
-    padding-left:1230px;
-  }
-  .ajuda{
-    width: 70px;
-    position: absolute;
-    padding-left: 1140px;
-    display: block;
-  }
+  display: grid;
+  font-family: manrope, sans-serif;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh auto;
+}
+#pesquisa{
+  height: 30px;
+  font-size: 25px;
+  display: block;
+}
+.lupa{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding-left: 900px;
+  padding-top: 45px;
+  display: block;
+}
+#formulario{
+  position: relative;
+}
+#formulario > form{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translatey(-230%) translateX(-60%)
+}
+#cadastro{
+  background-color: red;
+  width: 150px;
+  height: 50px;
+}
+
+.o-header {
+  grid-area: header;
+  padding: 1.5rem;
+  background: red;
+  color:white;
+}
+.logo{
+  width: 78px;
+  height: 78px;
+  padding-left: 40px;
+  position: absolute;
+  display: block;
+}
+.nome_logo{
+  padding-top: 60px;
+  color: white;
+  padding-left: 15px;
+  display: block;
+}
+.cliente{
+  width: 60px;
+  position: absolute;
+  padding-left: 1050px;
+  display: block;
+}
+.o-main {
+  grid-area: main;
+  background: grey;
+  color: white;
+}
+main > p{
+  color:black;
+}
+.carrinho{
+  width:70px;
+  position:absolute;
+  display: block;
+  padding-left:1230px;
+}
+.ajuda{
+  width: 70px;
+  position: absolute;
+  padding-left: 1140px;
+  display: block;
+}
+
+h2{
+  padding-left: 218px;
+  padding-top: 49px;
+  color: black;
+}
+
+.cadastro > input{
+  width: 560px;
+}
+.cadastro > div{
+  padding-left: 42px;
+}
+.login{
+  position: absolute;
+  top: 0;
+  padding-top: 320px;
+  padding-left: 500px;
+}
+
+div > input{
+  width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   
-  h2{
-    padding-left: 218px;
-    padding-top: 49px;
-    color: black;
-  }
+}
+div > p{
+  position: absolute;
+  top: 0;
+  padding-left: 500px;
+  padding-top: 430px;
+  font-size: 16px;
   
-  .cadastro > input{
-    width: 560px;
-  }
-  .cadastro > div{
-    padding-left: 42px;
-  }
-  .login{
-    position: absolute;
-    top: 0;
-    padding-top: 320px;
-    padding-left: 500px;
-  }
-  
-  div > input{
-    width: 500px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
-  }
-  div > p{
-    position: absolute;
-    top: 0;
-    padding-left: 500px;
-    padding-top: 430px;
-    font-size: 16px;
-    
-  }
-  #botao_cadastro{
-    display: grid;
-    grid-template-columns: 150px 10px;
-    position: absolute;
-    height: 50px;
-    padding-top: 10px;
-  }
-  
-  #botao_cadastro > div{
-    border: 1px solid black;
-    background-color: red;
-    color: black;
-    text-align: center;
-    padding-top: 12px;
-  }
-  
-  #botao_login{
-    display: grid;
-    grid-template-columns: 150px 10px;
-    position: absolute;
-    height: 50px;
-    padding-top:500px;
-    top:0;
-    padding-left: 650px;
-  }
-  
-  #botao_login > div{
-    border: 1px solid black;
-    background-color: red;
-    color: black;
-    text-align: center;
-    padding-top: 12px;
-  }
-  
-  .nome_login{
-    position: absolute;
-    top:0;
-    padding-left: 900px;
-    padding-top: 250px;
-  }
-  
-  .o-footer {
-    grid-area: footer;
-    padding: 1rem;
-    background: red;
-    color: white;
-  }
-  
+}
+#botao_cadastro{
+  display: grid;
+  grid-template-columns: 150px 10px;
+  position: absolute;
+  height: 50px;
+  padding-top: 10px;
+}
+
+#botao_cadastro > div{
+  border: 1px solid black;
+  background-color: red;
+  color: black;
+  text-align: center;
+  padding-top: 12px;
+}
+
+#botao_login{
+  display: grid;
+  grid-template-columns: 150px 10px;
+  position: absolute;
+  height: 50px;
+  padding-top:500px;
+  top:0;
+  padding-left: 650px;
+}
+
+#botao_login > div{
+  border: 1px solid black;
+  background-color: red;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.nome_login{
+  position: absolute;
+  top:0;
+  padding-left: 900px;
+  padding-top: 250px;
+}
+
+.o-footer {
+  grid-area: footer;
+  padding: 1rem;
+  background: red;
+  color: white;
+}
