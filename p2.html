@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="p2.js"></script>
+    <title>Prova Formulário locadora</title>
+</head>
+<body>
+    <form>
+         Nome: <br>
+        <input type="text" placeholder="Nome"> <br><br>
+         Telefone: <br>
+        <input type="tel" placeholder="(xx) xxxxx-xxxx"><br><br>
+        
+         Cidade Retirada: <br>
+         <select id="cidade_retirada">
+             <option value ="campos">Campos Dos Goytacazes-RJ</option>
+             <option value="rio">Rio de Janeiro - RJ</option>
+             <option value="vitoria">Vitoria</option>
+         </select>
+            
+        <br> <br>
+        Cidade Entrega: <br>
+        <select id="cidade_entrega">
+            <option value="campos">Campos Dos Goytacazes-RJ</option>
+            <option value="rio">Rio de Janeiro - RJ</option>
+            <option value="vitoria">Vitoria</option>
+        </select>
+
+       <br> <br> Data Retirada: <br>
+        <input type="date" id="data_retirada">
+
+       <br> <br> Data Entrega: <br>
+       <input type="date" id= "data_entrega">
+
+      <br><br> Tipo de carro: <br>
+       <select id="tipo_carro">
+           <option value="basico">Básico (R$ 119,00)</option>
+           <option value="ar">Básico com Ar (R$ 199,00)</option>
+           <option value="executivo">Executivo(R$ 299,00)</option>
+       </select>
+
+       <br> <br> <input type="submit" name="Enviar" id="enviar_form" onclick= " return teste()">
+
+    </form>
+</body>
+</html>
