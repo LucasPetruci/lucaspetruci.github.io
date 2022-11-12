@@ -27,6 +27,6 @@ function pegar_dados(){
         var resultado = data_entrega[0] - data_retirada[0]
         valor = resultado * valor_carro
     }
-    alert("valor igual a "+valor)
+    alert(valor)
     
 }
